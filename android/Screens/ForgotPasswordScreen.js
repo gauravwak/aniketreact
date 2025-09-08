@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     color: '#fff',
     borderWidth: 1,
-    borderColor: '#444',
+    borderColor: '#fcfbfbff',
     marginBottom: 18,
   },
   sendBtn: {
