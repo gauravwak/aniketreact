@@ -101,15 +101,16 @@ export default function FancyButton({ title, onPress }) {
 const styles = StyleSheet.create({
   button: {
     paddingVertical: 15,
-    paddingHorizontal: 40,
+    width:200,
     borderRadius: 12,
     marginVertical: 10,
     alignItems: "center",
     justifyContent: "center",
+    alignSelf:'center',
     elevation: 5,
   },
   text: {
-    fontSize: 18,
+    fontSize: 25,
     fontWeight: "bold",
     color: "#fff",
   },

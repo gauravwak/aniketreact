@@ -165,7 +165,7 @@
 
 // Screens/StartOptionsScreen.js
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Image, Button } from 'react-native';
 import FancyButton from '../Components/FancyButton'; // <-- ADDED import
 const heroImage = require('../assets/LandHeroImage.png');
 
@@ -191,17 +191,17 @@ export default function StartOptionsScreen({ navigation }) {
       {/* Replaced plain TouchableOpacity with FancyButton (no other changes) */}
       // inside StartOptionsScreen component's return
       <FancyButton
-        title="Log In"
+        title="Start"
         onPress={() => navigation.navigate('Login')}
       />
-      <FancyButton
-        title="Sign Up"
+      {/* <Button
+        title="New User? Sign Up"
         onPress={() => console.log('Sign Up pressed')}
       />
       <FancyButton
         title="Play as Guest"
         onPress={() => console.log('Play as Guest pressed')}
-      />
+      /> */}
     </View>
   );
 }
