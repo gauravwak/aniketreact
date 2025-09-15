@@ -403,7 +403,7 @@ export default function Example() {
       </KeyboardAvoidingView>
 
       {/* ===== Registration Modal (full-screen overlay) ===== */}
-      <Modal visible={showRegister} animationType="slide" transparent={true} onRequestClose={closeRegister}>
+      <Modal visible={showRegister} animationType="fade" transparent={true} onRequestClose={closeRegister}>
         <View style={styles.modalOverlay}>
           <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.modalInner}>
             <ScrollView contentContainerStyle={{ paddingVertical: 24 }} keyboardShouldPersistTaps="handled">
